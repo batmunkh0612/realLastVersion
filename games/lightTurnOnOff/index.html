@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modern Wesite</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+</head>
+
+<body>
+    <div id="icon" onclick="goBack()">
+        <i class="fa fa-angle-right one" style="font-size: 24px; color: white"></i>
+        <i class="fa two fa-angle-right" style="font-size: 24px; color: white"></i>
+    </div>
+    <div class="hero">
+
+        <nav>
+
+            <button type="button" onclick="toggleBtn()" id="btn"><span></span></button>
+        </nav>
+
+        <div class="lamp-container">
+            <img src="images/lamp.png" class="lamp">
+            <img src="images/light.png" class="light" id="light">
+        </div>
+    </div>
+    <script>
+        let btn = document.getElementById("btn");
+        let light = document.getElementById("light");
+        let $h2 = document.getElementById("icon")
+        let $two = document.getElementsByClassName("two")
+        let $one = document.getElementsByClassName("one")
+
+        $h2.addEventListener(
+            "mouseenter",
+            function() {
+                // console.log($two, $one)
+                $two[0].style.marginLeft = "10px";
+
+                setTimeout(function() {
+                    $one[0].style.marginLeft = "20px";
+                }, 500);
+
+                setTimeout(function() {
+                    $two[0].style.marginLeft = "0px";
+                }, 700);
+
+                setTimeout(function() {
+                    $one[0].style.marginLeft = "5px";
+                }, 900);
+            },
+            false
+        );
+
+        function toggleBtn() {
+            btn.classList.toggle("active");
+            light.classList.toggle("on");
+        }
+
+        function goBack() {
+            location.href = "../play/play.html#item4";
+        }
+    </script>
+</body>
+
+</html>

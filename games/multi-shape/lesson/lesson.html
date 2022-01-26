@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bubbled Image</title>
+    <link rel="stylesheet" href="./lesson.css" />
+    <link rel="shortcut icon" type="image/jpg" href="https://play-lh.googleusercontent.com/ve6ZSaZ3XmNUfusBs4sVKKOvPpJJRETo76_n9W4L3cWt5j09F-M_mobKdvjv2a1-2y0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+</head>
+
+<body>
+    <div class="container flex align-items justify-content">
+        <div id="icon" onclick="goBack()">
+            <i class="fa fa-angle-right one" style="font-size: 24px; color: black"></i>
+            <i class="fa two fa-angle-right" style="font-size: 24px; color: black"></i>
+        </div>
+
+        <canvas id="playground"></canvas>
+        <img src="https://source.unsplash.com/random/500x500/?animal,objects" alt="Image" id="img" crossorigin="anonymous" />
+
+        <canvas id="image-container"></canvas>
+        <button class="restart">Restart</button>
+    </div>
+    <script src="./lesson.js"></script>
+</body>
+
+</html>

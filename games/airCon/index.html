@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Air conditioner</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+</head>
+<!-- ❄☀️ -->
+
+<body>
+    <div id="icon" onclick="goBack()">
+        <i class="fa fa-angle-right one" style="font-size: 24px; color: black"></i>
+        <i class="fa two fa-angle-right" style="font-size: 24px; color: black"></i>
+    </div>
+    <div class="con">
+        <div class="conTop">
+            <div class="pos">
+                <div class="sunnyCold">
+                    ❄
+                </div>
+                <div class="tem">
+                    <span id="hasahNemeh">-</span>
+                    <span id="num">16</span>
+                    <span>°C</span>
+                </div>
+            </div>
+        </div>
+        <div class="conBtm">
+            <div class="point"></div>
+        </div>
+    </div>
+    <div class="btn">
+        <div class="btnTop">
+            <button class="btnTop1">
+                <svg class="cold" focusable="false" viewBox="0 0 24 24" aria-hidden="true" data-testid="AcUnitIcon"><path d="M22 11h-4.17l3.24-3.24-1.41-1.42L15 11h-2V9l4.66-4.66-1.42-1.41L13 6.17V2h-2v4.17L7.76 2.93 6.34 4.34 11 9v2H9L4.34 6.34 2.93 7.76 6.17 11H2v2h4.17l-3.24 3.24 1.41 1.42L9 13h2v2l-4.66 4.66 1.42 1.41L11 17.83V22h2v-4.17l3.24 3.24 1.42-1.41L13 15v-2h2l4.66 4.66 1.41-1.42L17.83 13H22z"></path></svg>
+            </button>
+            <button class="btnTop2">
+                <svg class="power" focusable="false" viewBox="0 0 24 24" aria-hidden="true" data-testid="PowerSettingsNewIcon"><path d="M13 3h-2v10h2V3zm4.83 2.17-1.42 1.42C17.99 7.86 19 9.81 19 12c0 3.87-3.13 7-7 7s-7-3.13-7-7c0-2.19 1.01-4.14 2.58-5.42L6.17 5.17C4.23 6.82 3 9.26 3 12c0 4.97 4.03 9 9 9s9-4.03 9-9c0-2.74-1.23-5.18-3.17-6.83z"></path></svg>
+            </button>
+            <button class="btnTop3">
+                <svg class="sunny" focusable="false" viewBox="0 0 24 24" aria-hidden="true" data-testid="WbSunnyIcon"><path class="sunny1" d="m6.76 4.84-1.8-1.79-1.41 1.41 1.79 1.79 1.42-1.41zM4 10.5H1v2h3v-2zm9-9.95h-2V3.5h2V.55zm7.45 3.91-1.41-1.41-1.79 1.79 1.41 1.41 1.79-1.79zm-3.21 13.7 1.79 1.8 1.41-1.41-1.8-1.79-1.4 1.4zM20 10.5v2h3v-2h-3zm-8-5c-3.31 0-6 2.69-6 6s2.69 6 6 6 6-2.69 6-6-2.69-6-6-6zm-1 16.95h2V19.5h-2v2.95zm-7.45-3.91 1.41 1.41 1.79-1.8-1.41-1.41-1.79 1.8z"></path></svg>
+            </button>
+        </div>
+        <div class="btnBtm">
+            <button class="plus"><svg id="top" focusable="false" viewBox="0 0 24 24" aria-hidden="true" data-testid="ExpandLessIcon"><path d="m12 8-6 6 1.41 1.41L12 10.83l4.59 4.58L18 14z"></path></svg></button>
+            <button class="minus"><svg id="bot" focusable="false" viewBox="0 0 24 24" aria-hidden="true" data-testid="ExpandMoreIcon"><path d="M16.59 8.59 12 13.17 7.41 8.59 6 10l6 6 6-6z"></path></svg></button>
+        </div>
+    </div>
+    <div class="audio">
+        <audio id="di" src="./audio/di.mp3" preload="auto"></audio>
+        <audio id="acWork" src="./audio/ac-work.mp3" preload="auto"></audio>
+        <audio id="airExt" src="./audio/air-extractor-fan.mp3" preload="auto"></audio>
+    </div>
+    <script src="./code.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Play admin</title>
+    <link rel="stylesheet" href="./css/flex.css">
+</head>
+<style>
+    * {
+        margin: 0;
+    }
+    
+    .container1 {
+        height: 100%;
+        width: 50%;
+        border: 1px solid #dbdbdb;
+    }
+    
+    .container2 {
+        height: 100%;
+        width: 50%;
+    }
+    
+    .backgroundImageDiv {
+        height: 150px;
+        width: 300px;
+    }
+    
+    .gameImage {
+        height: 100px;
+        width: 100px;
+    }
+    
+    input {
+        width: 300px;
+        height: 50px;
+    }
+    
+    button,
+    .priority {
+        height: 50px;
+        width: 50px;
+    }
+    
+    button:hover {
+        background-color: #ffff;
+    }
+    
+    .backgroundImageDiv,
+    .sameInput,
+    .gameImage,
+    input,
+    button {
+        border: 1px solid #dbdbdb;
+        border-radius: 10px;
+    }
+    
+    button,
+    .gameImage,
+    .backgroundImageDiv {
+        cursor: pointer;
+    }
+    
+    .hidden {
+        display: none;
+    }
+    
+    .previewImage {
+        height: 50%;
+        width: 50%;
+        background-color: chocolate;
+        position: fixed;
+    }
+    
+    .text-inputs {
+        width: 100%;
+    }
+    
+    .text-inputs>div {
+        width: 100%;
+        margin-bottom: 30px;
+    }
+</style>
+
+<body>
+    <div class="flex " style="width: 100vw; height: 100vh;">
+        <div class="container1 flex column align-center space-around">
+            <div class="backgroundImageDiv flex align-center justify-center">select a background image</div>
+            <input class="backgroundImageInput hidden" type="file">
+            <input class="sameInput menu-input" type="text" placeholder="Menu text...">
+            <div class="text-inputs"></div>
+            <button class="new-item-btn">+</button>
+            <button onclick="onSave()">save</button>
+        </div>
+        <!-- <div class="previewImage"></div> -->
+
+        <div class="container2"></div>
+    </div>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-storage.js"></script>
+    <script>
+        const firebaseConfig = {
+            apiKey: "AIzaSyBs-PigsKfsKnaNli-IL0A59osgtolCg4Y",
+            authDomain: "test-54719.firebaseapp.com",
+            projectId: "test-54719",
+            storageBucket: "test-54719.appspot.com",
+            messagingSenderId: "196274009356",
+            appId: "1:196274009356:web:2f08c467ce3945d84e4529"
+        };
+        firebase.initializeApp(firebaseConfig);
+        const db = firebase.firestore();
+    </script>
+    <script src="./js/admin.js"></script>
+</body>
+
+</html>

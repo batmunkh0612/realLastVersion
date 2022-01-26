@@ -1,0 +1,48 @@
+html , body {
+    margin: 0;
+}
+body {
+    background: #F4EFDF;
+    width: 100vw;
+
+}
+.imageDiv {
+    height: 100vh;
+    width: 50%;
+}
+.other {
+    height: 100vh;
+    width: 50%;
+}
+.sameInput {
+    background: #FFFFFF;
+    height: 79px;
+    width: 590px;
+    margin-bottom: 37px;
+    border: 2px solid #e96b51;
+    box-shadow: 4px 4px 0px #f4c87a, 8px 8px 0px #489880;
+    padding-left: 10px;
+}
+.image {
+    height: 285px;
+    width: 285px;
+    background: #FFFFFF;
+    border: 2px solid #e96b51;
+    box-shadow: 4px 4px 0px #f4c87a, 8px 8px 0px #489880;
+    margin-bottom: 30px;
+}
+.saveBtn {
+    height: 55px;
+    width: 266px;
+    background: #E96B51;
+    color: #F4EFDF;
+    font-size: 24px;
+    border-radius: 10px;
+    border: none;
+}
+.imageDiv, .other {
+    margin: 5px 0;
+} 
+.hidden {
+    display: none;
+}

@@ -1,0 +1,545 @@
+/*html body {
+    overflow: hidden;
+    height: 100%
+}*/
+
+
+/*html {
+    font-size: 14px
+}*/
+
+
+/*body {
+    margin: 0;
+    font-family: sans-serif;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    background: black;
+    -webkit-touch-callout: none;
+    -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+    -webkit-tap-highlight-color: transparent;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}*/
+
+
+/* ерөнхий нүүр хуудас*/
+
+.bg {
+    background: white 50% 0;
+    /*-webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);*/
+    /*-webkit-animation: flow 16s linear infinite;*/
+    /*animation: flow 16s linear infinite;*/
+    /*position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;*/
+    /*border: 1px solid #ddd;
+    border-radius: 4px;*/
+}
+
+
+/*.playing .bg {
+    -webkit-animation-play-state: paused;
+    animation-play-state: paused;
+}*/
+
+#wrapper {
+    width: 90%;
+    max-width: 640px;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate3d(-50%, -70%, 0);
+    transform: translate3d(-50%, -70%, 0);
+    z-index: 3
+}
+
+
+/* Гарчиг*/
+
+
+/* өглөө өдөр орой юу идмээр байна гэдэг text */
+
+#wrapper .title {
+    margin: 0 0 30px;
+    padding: 0;
+    font-weight: 600;
+    font-size: 32px;
+    cursor: pointer;
+    color: black;
+    /*white-space: nowrap;*/
+    /*overflow: hidden;*/
+    /*text-overflow: ellipsis;*/
+}
+
+
+/* өглөө өдөр орой юу идмээр байна гэдэг text хөдөлгөх animation*/
+
+#wrapper .title.shake {
+    -webkit-animation: shake .7s;
+    animation: shake .7s
+}
+
+
+/* өлсөж байна уу text*/
+
+#wrapper .what {
+    font-weight: 600;
+    color: black;
+}
+
+
+/*#wrapper.os {
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    -webkit-transform: translate3d(-50%, 50px, 0);
+    transform: translate3d(-50%, 50px, 0);
+    color: #666;
+    line-height: 1.4;
+    width: 80%;
+}
+
+#wrapper.tip {
+    position: absolute;
+    top: -50px;
+    left: 50%;
+    display: block;
+    padding: 7px 12px;
+    background: rgba(0, 0, 0, 0.6);
+    color: #fff;
+    white-space: nowrap;
+    border-radius: 15px;
+    -webkit-background-size: contain;
+    background-size: contain;
+    -webkit-transform: translate3d(-50%, 0, 0);
+    transform: translate3d(-50%, 0, 0);
+    -webkit-animation: dinnerTip 3s 1s linear both;
+    animation: dinnerTip 3s 1s linear both
+}
+
+#wrapper.tip:after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -4px;
+    border: 8px solid transparent;
+    border-top-color: rgba(0, 0, 0, 0.6)
+}*/
+
+#start,
+#user,
+#choice {
+    background: rgba(0, 0, 0, 0.1);
+    background: #641220;
+    border-radius: 40px;
+    padding: 5px;
+    /*-webkit-box-shadow: inset 0 2px 3px rgba(0, 0, 0, 0.07), 0 1px rgba(255, 255, 255, 0.5);
+    box-shadow: inset 0 2px 3px rgba(0, 0, 0, 0.07), 0 1px rgba(255, 255, 255, 0.5);*/
+    display: inline-block;
+    cursor: pointer;
+    border: none
+}
+
+#start span,
+#user span,
+#choice span {
+    border-radius: 35px;
+    width: 180px;
+    height: 60px;
+    line-height: 60px;
+    /*background: -webkit-gradient(linear, left top, left bottom, from(#FFBA30), to(#FF911E));*/
+    /*background: -webkit-linear-gradient(top, #FFBA30, #FF911E);*/
+    background: linear-gradient(to bottom, #c71f37, #641220);
+    color: #fff;
+    text-align: center;
+    display: block;
+    font-size: 32px;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+    /*-webkit-box-shadow: inset 0 1px white, 0 2px 3px rgba(0, 0, 0, 0.2);*/
+    /*box-shadow: inset 0 1px white, 0 2px 3px rgba(0, 0, 0, 0.2);*/
+    border: 1px solid #641220;
+}
+
+#start:hover span,
+#user:hover span,
+
+/* button ий hover*/
+
+#choice:hover span {
+    background: -webkit-gradient(linear, left top, left bottom, from(#03071e), to(#03071e));
+    background: -webkit-linear-gradient(top, #03071e, #03071e);
+    background: linear-gradient(to bottom, #e90719, #972437);
+    -webkit-box-shadow: inset 0 1px #03071e, 0 2px 3px rgba(0, 0, 0, 0.2);
+    box-shadow: inset 0 1px #03071e, 0 2px 3px rgba(0, 0, 0, 0.2);
+}
+
+#start:active span {
+    background: -webkit-gradient(linear, left top, left bottom, from(#972437), to(#972437));
+    background: -webkit-linear-gradient(top, #972437, #972437);
+    background: linear-gradient(to bottom, #137547, #70e000);
+    /*-webkit-box-shadow: inset 0 1px #FFB050, 0 2px 3px rgba(0, 0, 0, 0.2);*/
+    /*box-shadow: inset 0 1px #FFB050, 0 2px 3px rgba(0, 0, 0, 0.2)*/
+}
+
+
+/*#temp_container {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+    overflow: hidden;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0
+}*/
+
+
+/* background хоолны нэрнүүдийн hover*/
+
+#temp_container .temp {
+    position: absolute;
+    color: #777;
+    -webkit-animation: flash 1.6s ease-out both;
+    animation: flash 1.6s ease-out both;
+    white-space: nowrap;
+}
+
+
+/* нааш цааш хөдлөж байгаа унтраалганы байршил */
+
+#toggle {
+    position: absolute;
+    bottom: 100px;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    transform: translateX(-50%);
+    border-radius: 20px;
+    background: white;
+    border: black 1px solid;
+    padding: 2px;
+    -webkit-transition: .3s;
+    transition: .3s;
+    z-index: 10;
+    font-size: 15px;
+}
+
+.toggle {
+    position: absolute;
+    bottom: 100px;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    transform: translateX(-50%);
+    border-radius: 20px;
+    background: rgba(255, 255, 255, 0.6);
+    padding: 2px;
+    -webkit-transition: .3s;
+    transition: .3s;
+    z-index: 4;
+    font-size: 12px;
+}
+
+
+/* нааш цааш хөдлөж байгаа унтраалганы хэмжээ */
+
+#toggle span {
+    color: #999;
+    padding: 5px 9px;
+    display: inline-block;
+    cursor: pointer;
+    -webkit-transition: .3s;
+    transition: .3s;
+    line-height: 1;
+}
+
+.toggle span {
+    color: black;
+    padding: 5 px 6px;
+    display: inline-block;
+    cursor: pointer;
+    -webkit-transition: .3s;
+    transition: .3s;
+    line-height: 1
+}
+
+
+/* нааш цааш хөдлөж байгаа унтраалганы үгний өнгө */
+
+#toggle span.selected {
+    color: white;
+}
+
+.toggle span.selected {
+    color: #972437;
+}
+
+#toggle .hb {
+    background: black;
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    height: 1em;
+    width: 4em;
+    content: "";
+    border-radius: 20px;
+    z-index: -1;
+    padding: 5px 10px;
+    -webkit-transition: .3s;
+    transition: .3s
+}
+
+
+/*toggle .hb {
+    background: #00BDD6;
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    height: 1em;
+    width: 4em;
+    content: "";
+    border-radius: 20px;
+    z-index: -1;
+    padding: 5px 10px;
+    -webkit-transition: .3s;
+    transition: .3s
+}*/
+
+#toggle [data-type="monster"].selected+.hb {
+    left: 70px;
+    width: 5em;
+    background-color: #972437;
+}
+
+.toggle [data-type="monster"].selected+.hb {
+    left: 75px;
+    width: 5em;
+    background-color: #972437;
+}
+
+.playing #toggle {
+    -webkit-transform: translateX(-50%) translateY(200%);
+    -ms-transform: translateX(-50%) translateY(200%);
+    transform: translateX(-50%) translateY(200%);
+    opacity: 0
+}
+
+.comment {
+    position: absolute;
+    bottom: 60px;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    transform: translateX(-50%);
+    border-radius: 20px;
+    color: #FFF;
+    background: rgba(0, 0, 0, 0.3);
+    padding: 5px 10px;
+    z-index: 3;
+    font-size: 14px;
+    white-space: nowrap;
+    -webkit-animation: comment 3s both;
+    animation: comment 3s both
+}
+
+#ribbon {
+    -webkit-background-size: contain;
+    background-size: contain;
+    width: 93px;
+    height: 56px;
+    position: absolute;
+    top: 8px;
+    right: 15px;
+    z-index: 9
+}
+
+.adsbygoogle {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 50px;
+    width: auto !important;
+    text-align: center;
+    z-index: 2;
+    overflow: hidden
+}
+
+@-webkit-keyframes comment {
+    0%,
+    100% {
+        opacity: 0;
+        -webkit-transform: translate3d(-50%, 200%, 0) scale(0.7);
+        transform: translate3d(-50%, 200%, 0) scale(0.7)
+    }
+    20%,
+    80% {
+        opacity: 1;
+        -webkit-transform: translate3d(-50%, 0, 0);
+        transform: translate3d(-50%, 0, 0)
+    }
+}
+
+@keyframes comment {
+    0%,
+    100% {
+        opacity: 0;
+        -webkit-transform: translate3d(-50%, 200%, 0) scale(0.7);
+        transform: translate3d(-50%, 200%, 0) scale(0.7)
+    }
+    20%,
+    80% {
+        opacity: 1;
+        -webkit-transform: translate3d(-50%, 0, 0);
+        transform: translate3d(-50%, 0, 0)
+    }
+}
+
+@-webkit-keyframes dinnerTip {
+    0%,
+    100% {
+        opacity: 0;
+        -webkit-transform: perspective(600px) translate3d(-50%, 7px, 0) scale(0.7) rotateY(180deg);
+        transform: perspective(600px) translate3d(-50%, 7px, 0) scale(0.7) rotateY(180deg)
+    }
+    20%,
+    80% {
+        opacity: 1;
+        -webkit-transform: perspective(600px) translate3d(-50%, 0, 0) rotateY(0deg);
+        transform: perspective(600px) translate3d(-50%, 0, 0) rotateY(0deg)
+    }
+}
+
+@keyframes dinnerTip {
+    0%,
+    100% {
+        opacity: 0;
+        -webkit-transform: perspective(600px) translate3d(-50%, 7px, 0) scale(0.7) rotateY(180deg);
+        transform: perspective(600px) translate3d(-50%, 7px, 0) scale(0.7) rotateY(180deg)
+    }
+    20%,
+    80% {
+        opacity: 1;
+        -webkit-transform: perspective(600px) translate3d(-50%, 0, 0) rotateY(0deg);
+        transform: perspective(600px) translate3d(-50%, 0, 0) rotateY(0deg)
+    }
+}
+
+@-webkit-keyframes shake {
+    0% {
+        -webkit-transform: translateX(5px);
+        transform: translateX(5px)
+    }
+    20% {
+        -webkit-transform: translateX(-10px);
+        transform: translateX(-10px)
+    }
+    40% {
+        -webkit-transform: translateX(15px);
+        transform: translateX(15px)
+    }
+    60% {
+        -webkit-transform: translateX(-20px);
+        transform: translateX(-20px)
+    }
+    80% {
+        -webkit-transform: translateX(15px);
+        transform: translateX(15px)
+    }
+    100% {
+        -webkit-transform: translateX(-10px);
+        transform: translateX(-10px)
+    }
+}
+
+@keyframes shake {
+    0% {
+        -webkit-transform: translateX(5px);
+        transform: translateX(5px)
+    }
+    20% {
+        -webkit-transform: translateX(-10px);
+        transform: translateX(-10px)
+    }
+    40% {
+        -webkit-transform: translateX(15px);
+        transform: translateX(15px)
+    }
+    60% {
+        -webkit-transform: translateX(-20px);
+        transform: translateX(-20px)
+    }
+    80% {
+        -webkit-transform: translateX(15px);
+        transform: translateX(15px)
+    }
+    100% {
+        -webkit-transform: translateX(-10px);
+        transform: translateX(-10px)
+    }
+}
+
+@-webkit-keyframes flow {
+    0% {
+        background-position: 50% 0
+    }
+    100% {
+        background-position: 50% -250px
+    }
+}
+
+@keyframes flow {
+    0% {
+        background-position: 50% 0
+    }
+    100% {
+        background-position: 50% -250px
+    }
+}
+
+@-webkit-keyframes flash {
+    0% {
+        opacity: 0;
+        -webkit-transform: scale(1.5);
+        transform: scale(1.5);
+        color: transparent;
+        text-shadow: 0 0 5px rgba(0, 0, 0, 0.5)
+    }
+    50% {
+        opacity: 1
+    }
+    100% {
+        opacity: 0;
+        -webkit-transform: scale(0.5);
+        transform: scale(0.5)
+    }
+}
+
+@keyframes flash {
+    0% {
+        opacity: 0;
+        -webkit-transform: scale(1.5);
+        transform: scale(1.5);
+        color: transparent;
+        text-shadow: 0 0 5px rgba(0, 0, 0, 0.5)
+    }
+    50% {
+        opacity: 1
+    }
+    100% {
+        opacity: 0;
+        -webkit-transform: scale(0.5);
+        transform: scale(0.5)
+    }
+}

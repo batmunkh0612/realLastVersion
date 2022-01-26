@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>games</title>
+    <link rel="stylesheet" href="./css/flex.css" />
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+    }
+    
+    .hidden {
+        display: none;
+    }
+    
+    .backgroundImage,
+    .gameImg,
+    input {
+        height: 40px;
+        width: 289px;
+        text-align: center;
+        color: #326fe3;
+        background-color: #fff;
+        margin-bottom: 30px;
+        border-radius: 20px;
+    }
+    
+    .gameImg:hover {
+        height: 60px;
+        width: 309px;
+    }
+    
+    .backgroundImage:hover {
+        height: 60px;
+        width: 309px;
+    }
+    
+    input {
+        border: none;
+    }
+    
+    button {
+        height: 30px;
+        width: 35px;
+    }
+</style>
+
+<body>
+    <div class="flex column flex-start justify-center" style="height: 100vh; background-image: url(./img/Group\ 62.svg)">
+        <input class="hidden backgroundImageInput" type="file" />
+        <div class="backgroundImage">background image</div>
+        <input class="menu" type="text" placeholder="menu" />
+        <div class="flex justify-center align-center">
+            <!-- <div> -->
+            <input class=" text1ImageInput" type="file" />
+            <div class="text1Image flex space-around align-center gameImg">game image</div>
+            <input class="text1Input" type="text" placeholder="text" />
+            <button onclick="addContainer2()">+</button>
+            <!-- </div> -->
+            <div class="hidden container2">
+                <div class="text2Image flex space-around align-center gameImg">game image</div>
+                <input class="hidden text3Input" type="file" />
+                <input class="text2" type="text" placeholder="text" />
+                <button onclick="addContainer3()">+</button>
+            </div>
+            <div class="hidden container3">
+                <div class="text3Image flex space-around align-center gameImg">game image</div>
+                <input class="hidden text3Input" type="file" />
+                <input class="text3" type="text" placeholder="text" />
+            </div>
+        </div>
+
+
+
+        <input class="locationInput" type="text" placeholder="onclick" />
+
+        <button class="saveBtn" onclick="onSave()">save</button>
+    </div>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-storage.js"></script>
+    <script>
+        const firebaseConfig = {
+            apiKey: "AIzaSyBs-PigsKfsKnaNli-IL0A59osgtolCg4Y",
+            authDomain: "test-54719.firebaseapp.com",
+            projectId: "test-54719",
+            storageBucket: "test-54719.appspot.com",
+            messagingSenderId: "196274009356",
+            appId: "1:196274009356:web:2f08c467ce3945d84e4529"
+        };
+        firebase.initializeApp(firebaseConfig);
+        const db = firebase.firestore();
+    </script>
+    <script src="/home/js/playAdmin.js"></script>
+</body>
+
+</html>

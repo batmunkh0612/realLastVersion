@@ -1,0 +1,95 @@
+body {
+    margin: 0;
+    margin: 0;
+    background-color: black;
+}
+
+* {
+    font-family: "Montserrat";
+}
+
+.flex {
+    display: flex;
+}
+
+.flex-direction {
+    flex-direction: column;
+}
+
+.align-items {
+    align-items: center;
+}
+
+.justify-content {
+    justify-content: center;
+}
+
+.space-evenly {
+    justify-content: space-evenly;
+}
+
+.container {
+    height: 100vh;
+    width: 100vw;
+    background-image: url(../pictures/homebackgroundHome.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: calc(100vh - 60px);
+    width: calc(100vw - 60px);
+}
+
+.homeLogo {
+    width: 350px;
+    height: 160px;
+    margin-top: 150px;
+    margin-bottom: 250px;
+}
+
+img {
+    height: 90px;
+    width: 250px;
+}
+
+.button {
+    width: 100%;
+}
+
+button {
+    width: 330px;
+    height: 100px;
+    border: 1px solid white;
+    background-color: black;
+    color: white;
+    font-size: 48px;
+    font-weight: 300;
+}
+
+.clickButton:hover {
+    cursor: pointer;
+    background-color: white;
+    color: black;
+    border: 2px solid black;
+}
+
+.text {
+    margin: 0;
+    padding: 0;
+    color: white;
+    font-family: 'Lobster', cursive;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 70px;
+    width: 500px;
+    height: 200px;
+}
+
+.userIcon {
+    background-image: url(../pictures/user.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 65px;
+    height: 65px;
+    position: absolute;
+    top: 5%;
+    left: 93%;
+}

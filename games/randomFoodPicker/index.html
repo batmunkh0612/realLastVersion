@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>hoolnii songolt</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <link rel="stylesheet" href="./style.min.css">
+    <link rel="stylesheet" href="./layui.css" media="all">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+</head>
+
+<body>
+    <div id="icon" onclick="goBack()">
+        <i class="fa fa-angle-right one" style="font-size: 24px; color: black"></i>
+        <i class="fa two fa-angle-right" style="font-size: 24px; color: black"></i>
+    </div>
+    <div class="bg"></div>
+    <div id="temp_container"></div>
+    <div id="wrapper">
+        <h1 class="title"><span class="time"></span><b class="what">Өлсөж байна уу</b><span class="punctuation">?</span></h1>
+        <span id="start"><span>Эхлүүлэх</span></span>
+        <span id="user"><span>Тохиргоо</span></span>
+        <span id="choice"><span class="inC">Сонголтоор</span></span>
+        <p class="os"></p>
+    </div>
+    <div id="toggle" class="dis"><span data-type="human" class="selected">энгийн</span><span data-type="monster">энгийн биш</span>
+        <div class="hb"></div>
+    </div>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-firestore.js"></script>
+    <script>
+        firebase.initializeApp({
+            apiKey: "AIzaSyBvKC372hEtDGqumSJcgxYbUVzyfEqrCgY",
+            authDomain: "randomfood-afce0.firebaseapp.com",
+            projectId: "randomfood-afce0",
+            storageBucket: "randomfood-afce0.appspot.com",
+            messagingSenderId: "857658864489",
+            appId: "1:857658864489:web:cd0d5e81061405ec9cc3f8"
+        });
+        const db = firebase.firestore();
+    </script>
+    <script>
+        let $h2 = document.getElementById("icon")
+        let $two = document.getElementsByClassName("two")
+        let $one = document.getElementsByClassName("one")
+
+        $h2.addEventListener(
+            "mouseenter",
+            function() {
+                // console.log($two, $one)
+                $two[0].style.marginLeft = "10px";
+
+                setTimeout(function() {
+                    $one[0].style.marginLeft = "20px";
+                }, 500);
+
+                setTimeout(function() {
+                    $two[0].style.marginLeft = "0px";
+                }, 700);
+
+                setTimeout(function() {
+                    $one[0].style.marginLeft = "5px";
+                }, 900);
+            },
+            false
+        );
+
+        function goBack() {
+            location.href = "../play/play.html#item1";
+        }
+    </script>
+    <script src="./zepto.min.js"></script>
+    <script src="./app.min.js"></script>
+    <script>
+        var _hmt = _hmt || [];
+    </script>
+    <div style="display:none">
+        <script src="./layui.js" charset="utf-8"></script>
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/question.css" />
+    <link rel="stylesheet" href="./css/flex.css" />
+    <link rel="shortcut icon" href="../testUrPatience/pictures/Zugeerl.png" />
+</head>
+
+<body>
+    <div class="hidden container acenter jcenter">
+
+        <div class="question flex column acenter space-evenly">
+            <button class="backBtn">Back</button>
+            <div class="questionContainer">
+                <div class="questionDiv"></div>
+            </div>
+            <div class="answerContainer flex jcenter">
+                <button class="answerBtn answer1">fdedfghjfd</button>
+                <button class="answerBtn answer2">hjkhgfd</button>
+                <button class="answerBtn answer3">retyrewsdfv</button>
+                <button class="answerBtn answer4">fbnbvcxzcfdgty</button>
+            </div>
+        </div>
+    </div>
+    <div class="previewImgContainer">
+        <div class="randomImg"></div>
+        <div class="previewImg flex column acenter jcenter">
+            <div class="time"></div>
+        </div>
+    </div>
+
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-storage.js"></script>
+
+    <script>
+        const firebaseConfig = {
+            apiKey: "AIzaSyBs-PigsKfsKnaNli-IL0A59osgtolCg4Y",
+            authDomain: "test-54719.firebaseapp.com",
+            projectId: "test-54719",
+            storageBucket: "test-54719.appspot.com",
+            messagingSenderId: "196274009356",
+            appId: "1:196274009356:web:2f08c467ce3945d84e4529"
+        };
+        firebase.initializeApp(firebaseConfig);
+        const db = firebase.firestore();
+    </script>
+    <script src="./js/index.js"></script>
+</body>
+
+</html>

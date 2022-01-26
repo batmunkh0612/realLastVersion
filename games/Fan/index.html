@@ -1,0 +1,349 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Сэнс</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            width: 100vw;
+            height: 100vh;
+            justify-content: space-around;
+            background-image: url(./game\ two\ \(2\).png);
+            background-repeat: no-repeat;
+            background-size: cover;
+            margin: 0;
+            padding: 0;
+        }
+        
+        .fangshan {
+            margin: 24px auto 0 auto;
+            width: 360px;
+            height: auto;
+            margin-bottom: 20px;
+        }
+        
+        .box2 {
+            width: 360px;
+            height: 360px;
+            border-radius: 50%;
+            /* border: 3px solid #000; */
+            border: 3px solid rgb(224, 224, 224);
+            position: relative;
+            z-index: 1;
+        }
+        
+        #nob1 {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            background: linear-gradient(whitesmoke, 60%, white);
+            position: absolute;
+            left: 36.1%;
+            top: 36.1%;
+            z-index: 3;
+        }
+        
+        .nob {
+            width: 90px;
+            height: 180px;
+            border-radius: 50%;
+            position: absolute;
+            top: 0;
+            left: 135px;
+        }
+        
+        #nob2 {
+            background: linear-gradient(#ef709b, 60%, #fa9372);
+            border: 1px solid #ef709b;
+            transform-origin: 50% bottom;
+            transition: transform 1s linear;
+        }
+        
+        #nob3 {
+            transform: rotate(240deg);
+            left: 135px;
+            top: 0px;
+            background: linear-gradient(#ef709b, 60%, #fa9372);
+            border: 1px solid #ef709b;
+            transform-origin: 50% bottom;
+            transition: transform 1s linear;
+        }
+        
+        #nob4 {
+            transform: rotate(120deg);
+            left: 135px;
+            top: 0px;
+            background: linear-gradient(#ef709b, 60%, #fa9372);
+            border: 1px solid #ef709b;
+            transform-origin: 50% bottom;
+            transition: transform 1s linear;
+        }
+        
+        .shu {
+            width: 48px;
+            height: 300px;
+            background: linear-gradient(to right, #b5c6e0, 60%, #ebf4f5);
+            border: 1px solid #b5c6e0;
+            /* box-shadow: 2px 0 2px 2px #dedede; */
+            margin-left: 156px;
+            position: relative;
+            z-index: 0;
+        }
+        
+        .pan {
+            width: 360px;
+            height: 50px;
+            border-radius: 50%;
+            margin-top: -25px;
+            background: linear-gradient(to right, #b5c6e0, 60%, #ebf4f5);
+            border: 1px solid #b5c6e0;
+        }
+        
+        .n {
+            position: absolute;
+            width: 36px;
+            height: 36px;
+            border-radius: 50%;
+            background: linear-gradient(whitesmoke, 60%, white);
+            color: rgba(0, 0, 0, 0.87);
+            font-weight: bold;
+            font-size: 0.875rem;
+            line-height: 2.4;
+            left: 6px;
+            text-align: center;
+            cursor: pointer;
+        }
+        
+        #n1 {
+            top: 48px;
+            background: linear-gradient(whitesmoke, 60%, white);
+        }
+        
+        #n2 {
+            top: 90px;
+            background: linear-gradient(whitesmoke, 60%, white);
+        }
+        
+        #n3 {
+            top: 132px;
+            background: linear-gradient(whitesmoke, 60%, white);
+        }
+        
+        #n4 {
+            top: 174px;
+            background: linear-gradient(whitesmoke, 60%, white);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        .tip {
+            margin: 24px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0px;
+            font-family: Roboto, Helvetica, Arial, sans-serif;
+            font-weight: 400;
+            font-size: 1rem;
+            line-height: 1.5;
+            letter-spacing: 0.00938em;
+            text-align: center;
+            color: rgba(0, 0, 0, 0.6);
+        }
+        
+        .iconimg {
+            width: 20px;
+        }
+        
+        .two {
+            transition: 1s;
+        }
+        
+        .one {
+            margin-left: 5px;
+            transition: 0.5s;
+        }
+        
+        #icon {
+            margin-top: 20px;
+            margin-left: 20px;
+            width: 60px;
+            transform: rotate(180deg);
+        }
+    </style>
+</head>
+
+<body>
+    <div id="icon" onclick="goBack()">
+        <i class="fa fa-angle-right one" style="font-size: 24px; color: black"></i>
+        <i class="fa two fa-angle-right" style="font-size: 24px; color: black"></i>
+    </div>
+    <p class="tip">salhiqv l bolhosss bish uugan goy bga biz (:</p>
+    <div class="fangshan">
+        <div class="box2">
+            <div id="nob1"></div>
+            <div class="nob" id="nob2"></div>
+            <div class="nob" id="nob3"></div>
+            <div class="nob" id="nob4"></div>
+        </div>
+        <div class="shu">
+            <div class="n" id="n1">1</div>
+            <div class="n" id="n2">2</div>
+            <div class="n" id="n3">3</div>
+            <div class="n" id="n4">
+                <img src="./icons8-interface-96.png" class="iconimg" alt="turn of" /><span class="glyphicon glyphicon-off" aria-hidden="true"></span>
+            </div>
+        </div>
+        <div class="pan"></div>
+    </div>
+    <div class="yin">
+        <audio id="di" src="./di.m4a" preload="auto"></audio>
+        <audio id="ac-work" src="./ac-work.m4a" preload="auto"></audio>
+        <audio id="air-extractor-fan" src="./air-extractor-fan.m4a" preload="auto"></audio>
+    </div>
+    <script>
+        let n1 = document.getElementById("n1");
+        let n2 = document.getElementById("n2");
+        let n3 = document.getElementById("n3");
+        let n4 = document.getElementById("n4");
+        let i = 1;
+        let interval;
+        let $h2 = document.getElementById("icon")
+        let $two = document.getElementsByClassName("two")
+        let $one = document.getElementsByClassName("one")
+
+        $h2.addEventListener(
+            "mouseenter",
+            function() {
+                // console.log($two, $one)
+                $two[0].style.marginLeft = "10px";
+
+                setTimeout(function() {
+                    $one[0].style.marginLeft = "20px";
+                }, 500);
+
+                setTimeout(function() {
+                    $two[0].style.marginLeft = "0px";
+                }, 700);
+
+                setTimeout(function() {
+                    $one[0].style.marginLeft = "5px";
+                }, 900);
+            },
+            false
+        );
+
+        function change3(num) {
+            nob2.style.transform = "rotate(" + i * 360 + "deg)";
+            nob2.style.transition = "transform " + num + "ms linear";
+            var num2 = i * 360 + 240;
+            nob3.style.transform = "rotate(" + num2 + "deg)";
+            nob3.style.transition = "transform " + num + "ms linear";
+            var num3 = i * 360 + 120;
+            nob4.style.transform = "rotate(" + num3 + "deg)";
+            nob4.style.transition = "transform " + num + "ms linear";
+            i++;
+        }
+        n1.onclick = function() {
+            playDi();
+            toggleAC(false);
+            clearInterval(interval);
+            change3(1000);
+            interval = setInterval(function() {
+                change3(1000);
+            }, 1000);
+        };
+        n2.onclick = function() {
+            playDi();
+            toggleAC(false);
+            clearInterval(interval);
+            change3(500);
+            interval = setInterval(function() {
+                change3(500);
+            }, 500);
+        };
+        n3.onclick = function() {
+            playDi();
+            toggleAC(false);
+            clearInterval(interval);
+            change3(200);
+            interval = setInterval(function() {
+                change3(200);
+            }, 200);
+        };
+        n4.onclick = function() {
+            playDi();
+            toggleAC(true);
+            clearInterval(interval);
+        };
+
+        function playDi() {
+            const di = document.getElementById("di");
+            if (di) {
+                di.play();
+            }
+        }
+
+        let playStartSoundTimeoutId;
+        let playWorkSoundTimeoutId;
+        let playWorkSoundIntervalId;
+
+        function playStartSound() {
+            const acStart = document.getElementById("ac-work");
+            acStart.load();
+            acStart.play();
+
+            playStartSoundTimeoutId = setTimeout(() => {
+                playWorkSound();
+            }, 8000);
+        }
+
+        const noiseStartTime = 2;
+
+        const noiseDuration = 56;
+
+        function playWorkSound() {
+            const acWork = document.getElementById("air-extractor-fan");
+            acWork.load();
+            acWork.play();
+
+            playWorkSoundTimeoutId = setTimeout(() => {
+                playWorkSoundIntervalId = setInterval(() => {
+                    acWork.currentTime = noiseStartTime;
+                }, noiseDuration * 1000);
+            }, noiseStartTime * 1000);
+        }
+
+        function toggleAC(status) {
+            console.log(status);
+            if (status) {
+                document.getElementById("ac-work").load();
+                const acWork = document.getElementById("air-extractor-fan");
+                if (playStartSoundTimeoutId) {
+                    clearTimeout(playStartSoundTimeoutId);
+                }
+                if (playWorkSoundTimeoutId) {
+                    clearTimeout(playWorkSoundTimeoutId);
+                }
+                if (playWorkSoundIntervalId) {
+                    clearInterval(playWorkSoundIntervalId);
+                }
+                acWork.currentTime = noiseStartTime + noiseDuration;
+            } else {
+                playStartSound();
+            }
+        }
+
+        function goBack() {
+            location.href = "../play/play.html#item6";
+        }
+    </script>
+</body>
+
+</html>

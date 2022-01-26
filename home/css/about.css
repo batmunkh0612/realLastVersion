@@ -1,0 +1,450 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #000;
+    overflow-x: hidden;
+}
+
+* {
+    font-family: "Lobster", cursive;
+    font-family: "Montserrat", sans-serif;
+    color: #fff;
+}
+
+.flex {
+    display: flex;
+}
+
+.row-reverse {
+    flex-direction: row-reverse;
+}
+
+.flex-direction {
+    flex-direction: column;
+}
+
+.align-items {
+    align-items: center;
+}
+
+.justify-content {
+    justify-content: center;
+}
+
+.space-evenly {
+    justify-content: space-evenly;
+}
+
+.space-between {
+    justify-content: space-between;
+}
+
+.space-around {
+    justify-content: space-around;
+}
+
+
+/* about start */
+
+.title {
+    width: 100vw;
+    height: 90px;
+    position: fixed;
+    z-index: 999;
+    top: 0;
+}
+
+.imgLogo {
+    cursor: pointer;
+    position: fixed;
+    top: 6%;
+    left: 10%;
+}
+
+.container {
+    width: 100vw;
+    height: 100vh;
+    background-image: url(../pictures/aboutPictures/aboutbackground.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.msg {
+    height: 600px;
+    width: 1000px;
+}
+
+.msg-title {
+    width: 700px;
+    height: 400px;
+    margin: 0 40px 40px 0;
+    -webkit-animation: scale-in-ver-center 0.7s cubic-bezier(0.250, 0.460, 0.450, 0.940) 1s both;
+    animation: scale-in-ver-center 0.7s cubic-bezier(0.250, 0.460, 0.450, 0.940) 1s both;
+}
+
+.bigText {
+    font-size: 54px;
+    line-height: 130%;
+    letter-spacing: 10px;
+    font-weight: 700;
+    height: 100px;
+    width: 200px;
+    color: #fff;
+}
+
+@keyframes scale-in-ver-center {
+    0% {
+        -webkit-transform: scaleY(0);
+        transform: scaleY(0);
+        opacity: 1;
+    }
+    100% {
+        -webkit-transform: scaleY(1);
+        transform: scaleY(1);
+        opacity: 1;
+    }
+}
+
+.msg-text {
+    margin: 300px 0 0 0;
+    width: 600px;
+    font-size: 18px;
+    line-height: 150%;
+    text-align: left;
+    letter-spacing: 1px;
+    color: #fff;
+    visibility: visible;
+    -webkit-animation: scale-in-hor-center 0.7s cubic-bezier(0.250, 0.460, 0.450, 0.940) 1s both;
+    animation: scale-in-hor-center 0.7s cubic-bezier(0.250, 0.460, 0.450, 0.940) 1s both;
+}
+
+@keyframes scale-in-hor-center {
+    0% {
+        -webkit-transform: scaleX(0);
+        transform: scaleX(0);
+        opacity: 1;
+    }
+    100% {
+        -webkit-transform: scaleX(1);
+        transform: scaleX(1);
+        opacity: 1;
+    }
+}
+
+
+/* about  title finish*/
+
+
+/* background video player start*/
+
+.backgroundVideo {
+    height: 100vh;
+    width: 100vw;
+    position: fixed;
+    top: 0;
+    z-index: -1;
+}
+
+
+/* background video player finish */
+
+
+/* about team text start */
+
+.aboutcontain {
+    background-color: #000;
+    height: auto;
+}
+
+.about {
+    height: auto;
+    background-image: url(../pictures/aboutPictures/Group\ 66.png);
+    background-size: auto;
+    background-position-x: center;
+    background-position-y: 500px;
+    background-repeat: no-repeat;
+}
+
+.ideas {
+    font-size: 24px;
+    padding: 100px 0;
+}
+
+.line-img {
+    display: block;
+    width: 12px;
+    height: 100px;
+    background-color: #fff;
+}
+
+.webVideo {
+    height: 392px;
+    width: 680px;
+    margin: 50px;
+}
+
+.webVideo_mini {
+    height: 100%;
+    width: 100%;
+}
+
+video {
+    width: 600px;
+    height: 300px;
+    border: 1px solid black;
+}
+
+.explanation {
+    width: 800px;
+    height: 45vh;
+    margin-bottom: 100px;
+}
+
+.teamSkills {
+    width: 450px;
+    text-align: center;
+}
+
+.teamSkills h3 {
+    font-size: 40px;
+    line-height: 120%;
+    letter-spacing: 5px;
+    height: 100px;
+    width: 450px;
+}
+
+.teamSkills span {
+    font-size: 18px;
+    line-height: 200%;
+    height: 270px;
+    width: 50px;
+}
+
+.ideas {
+    margin: 70px 0;
+}
+
+.ideasP {
+    width: 400px;
+    font-size: 18px;
+    font-weight: 200;
+    text-align: center;
+    color: rgb(112, 114, 118);
+}
+
+
+/* about team test finish */
+
+
+/* hamtran ajillassan baiguulga start */
+
+.hamtranAjillasan {
+    margin: 50px 0;
+}
+
+.baiguulga {
+    height: 170px;
+    width: 300px;
+    background-size: 120px 100px;
+    background-position: center;
+    background-repeat: no-repeat;
+    border: 0.1px solid rgb(112, 114, 118);
+    margin: 70px 0;
+}
+
+
+/* <<<<---- background image Start ---->>>> */
+
+.nestLogo {
+    background-image: url(../pictures/aboutPictures/logo-portrait-bw\ on\ black.png);
+}
+
+.starhub {
+    background-image: url(../pictures/Artboard\ 1.png);
+    background-size: cover;
+}
+
+.zvgeerl {
+    background-image: url(../pictures/Zugeerl.svg);
+}
+
+.image1b {
+    background-image: url(../pictures/peoplesPhoto/bilguun.jpeg);
+}
+
+.image2 {
+    background-image: url(../pictures/peoplesPhoto/misheel.jpeg);
+}
+
+.image3 {
+    background-image: url(../pictures/peoplesPhoto/nomko.jpeg);
+}
+
+.image4 {
+    background-image: url(../pictures/peoplesPhoto/batmunkh.jpeg);
+}
+
+.image5 {
+    background-image: url(../pictures/peoplesPhoto/bilguun.jpeg);
+}
+
+.image6 {
+    background-image: url(../pictures/peoplesPhoto/misheel.jpeg);
+}
+
+.image7 {
+    background-image: url(../pictures/peoplesPhoto/Yesui.jpeg);
+}
+
+.image8 {
+    background-image: url(../pictures/peoplesPhoto/dulguun.jpeg);
+}
+
+.image9 {
+    background-image: url(../pictures/peoplesPhoto/tergelTengis.jpeg);
+}
+
+.image10 {
+    background-image: url(../pictures/peoplesPhoto/tergelTengis.jpeg);
+}
+
+.image11 {
+    background-image: url(../pictures/peoplesPhoto/zolboo.jpeg);
+}
+
+.image12 {
+    background-image: url(../pictures/peoplesPhoto/dulguun.jpeg);
+}
+
+
+/* <<<<---- background image End ---->>>> */
+
+
+/* hamtran ajillasan baiguulga finish */
+
+
+/* about team images start */
+
+
+/* this human image */
+
+.img {
+    height: 200vh;
+    width: 100vw;
+}
+
+.images {
+    width: 50vw;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.humanImg {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 33.3333%;
+    float: left;
+}
+
+
+/* this human image finish */
+
+.teamImages {
+    height: 100vh;
+    width: 50%;
+    background-color: #0A0A0A;
+    position: sticky;
+    top: 0;
+    right: 0;
+}
+
+#teamImage {
+    height: 100vh;
+    width: 50%;
+    background-color: #0A0A0A;
+    top: 0;
+    right: 0;
+}
+
+.teamImages_text {
+    height: 50vh;
+}
+
+.text {
+    font-size: 20px;
+    /* font-weight: 50; */
+    padding-left: 200px;
+    padding-bottom: 80px;
+}
+
+.teamStarhub {
+    font-size: 48px;
+    /* font-weight: 400; */
+    padding-left: 200px;
+    padding-bottom: 100px;
+}
+
+.teamImage {
+    height: 50vh;
+    background-image: url(../pictures/peoplesPhoto/SeeCameraTeam.jpeg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
+/* about team images finish */
+
+
+/* contact start */
+
+.contact {
+    width: 100%;
+    height: 100vh;
+    background-color: #fff;
+    color: #000;
+}
+
+.sayHello {
+    font-size: 34px;
+    font-weight: 300;
+    color: #000;
+}
+
+.email {
+    font-size: 64px;
+    font-weight: 400;
+    letter-spacing: 1px;
+    color: #000;
+}
+
+.contacts {
+    width: 400px;
+    margin: 0 30px;
+}
+
+.contact_title {
+    font-size: 16px;
+    font-weight: 800;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+    color: #000;
+}
+
+.contact_text {
+    font-size: 16px;
+    font-weight: 300;
+    letter-spacing: 1px;
+    color: #000;
+}
+
+.contact_titleblabla {
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+
+/* contact finish */

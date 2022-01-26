@@ -1,0 +1,142 @@
+body {
+    padding: 0;
+    margin: 0;
+}
+
+.flex {
+    display: flex;
+}
+
+.align-items {
+    align-items: center;
+}
+
+.justify-content {
+    justify-content: center;
+}
+
+.container {
+    height: 100vh;
+    width: 100vw;
+    background-image: url(./rendom\ color\ only\ one.svg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.leftArrow {
+    position: absolute;
+    top: 50px;
+    left: 70px;
+    text-decoration: none;
+}
+
+.backgroundimg {
+    border: 3px solid #9d4edd;
+    margin-bottom: 80px;
+    background-color: aliceblue;
+}
+
+.big_shape {
+    background-color: chocolate;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 492px;
+    width: 512px;
+    border-radius: 50%;
+}
+
+.widthbig {
+    display: flex;
+    flex-direction: column;
+    width: 512px;
+    height: 492px;
+}
+
+.middle_shape {
+    display: flex;
+    flex-direction: row;
+    height: 50%;
+    width: 100%;
+}
+
+.little_shape {
+    background-color: chocolate;
+    border-radius: 50%;
+}
+
+div {
+    overflow: hidden;
+    -webkit-animation: text-focus-in 0.1s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+    animation: text-focus-in 0.1s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+}
+
+@-webkit-keyframes text-focus-in {
+    0% {
+        -webkit-filter: blur(12px);
+        filter: blur(12px);
+        opacity: 0;
+    }
+    100% {
+        -webkit-filter: blur(0px);
+        filter: blur(0px);
+        opacity: 1;
+    }
+}
+
+@keyframes text-focus-in {
+    0% {
+        -webkit-filter: blur(12px);
+        filter: blur(12px);
+        opacity: 0;
+    }
+    100% {
+        -webkit-filter: blur(0px);
+        filter: blur(0px);
+        opacity: 1;
+    }
+}
+
+.restart {
+    position: absolute;
+    left: 46%;
+    bottom: 12%;
+    height: 40px;
+    width: 120px;
+    font-weight: 400;
+    font-size: medium;
+    background-color: #9d4edd;
+    border: 2px solid #9d4edd;
+    color: white;
+}
+
+.restart:hover {
+    position: absolute;
+    left: 46%;
+    bottom: 12%;
+    height: 40px;
+    width: 120px;
+    font-weight: 400;
+    font-size: medium;
+    background-color: white;
+    border: 2px solid #9d4edd;
+    color: #9d4edd;
+}
+
+.two {
+    transition: 1s;
+}
+
+.one {
+    margin-left: 5px;
+    transition: 0.5s;
+}
+
+#icon {
+    position: absolute;
+    top: 30px;
+    left: 40px;
+    width: 60px;
+    transform: rotate(180deg);
+}

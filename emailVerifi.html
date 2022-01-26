@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>emailVerification</title>
+</head>
+
+<body>
+    <div class="main">
+        <div class="box">
+            <div class="img1"></div>
+            <div class="nameBar" style="margin-bottom: 250px;">
+                <div class="Wemail">
+                    <div>
+                        welcome:
+                    </div>
+                    <div class="email"></div>
+                </div>
+            </div>
+            <button class="send">send email verification</button>
+            <button class="logOut">logOut</button>
+            <button class="backToHome">backToHome</button>
+        </div>
+    </div>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-auth.js"></script>
+
+    <script>
+        const firebaseConfig = {
+            apiKey: "AIzaSyBs-PigsKfsKnaNli-IL0A59osgtolCg4Y",
+            authDomain: "test-54719.firebaseapp.com",
+            projectId: "test-54719",
+            storageBucket: "test-54719.appspot.com",
+            messagingSenderId: "196274009356",
+            appId: "1:196274009356:web:2f08c467ce3945d84e4529"
+        };
+        firebase.initializeApp(firebaseConfig);
+        const auth = firebase.auth();
+    </script>
+    <script src="./js/verifi.js"></script>
+</body>
+
+</html>

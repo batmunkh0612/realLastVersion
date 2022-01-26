@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Just Chill</title>
+    <link rel="stylesheet" href="./monkey.css" />
+    <link rel="shortcut icon" type="image/jpg" href="https://image.shutterstock.com/image-vector/just-chill-lettering-on-handdrawn-260nw-1052020535.jpg" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+</head>
+
+<body>
+    <div class="container flex align-items justify-content">
+        <img src="./waterfall.gif" alt="just chill" class="bg" />
+        <div id="icon" onclick="goBack()">
+            <i class="fa fa-angle-right one" style="font-size: 24px; color: rgb(82, 178, 182);"></i>
+            <i class="fa two fa-angle-right" style="font-size: 24px; color: rgb(82, 178, 182);"></i>
+        </div>
+        <audio id="myAudio">
+        <source src="./river.mp3" type="audio/mpeg" />
+      </audio>
+        <button id="playPauseBTTN" onclick="playPause()">Play &#9658;</button>
+    </div>
+    <script src="./watersound.js"></script>
+</body>
+
+</html>

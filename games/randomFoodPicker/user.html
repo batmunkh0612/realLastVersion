@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        * {
+            margin: 0%;
+            padding: 0;
+        }
+        
+        .main {
+            width: 100%;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            background-color: #E9E9E9;
+        }
+        
+        .food {
+            width: 500px;
+            height: 60px;
+        }
+        
+        .add,
+        .back {
+            background: rgba(0, 0, 0, 0.1);
+            border-radius: 40px;
+            padding: 5px;
+            -webkit-box-shadow: inset 0 2px 3px rgba(0, 0, 0, 0.07), 0 1px rgba(255, 255, 255, 0.5);
+            box-shadow: inset 0 2px 3px rgba(0, 0, 0, 0.07), 0 1px rgba(255, 255, 255, 0.5);
+            display: inline-block;
+            cursor: pointer
+        }
+        
+        .add span,
+        .back span {
+            border-radius: 35px;
+            width: 180px;
+            height: 60px;
+            line-height: 60px;
+            background: -webkit-gradient(linear, left top, left bottom, from(#972437), to(#972437));
+            background: -webkit-linear-gradient(top, #972437, #972437);
+            background: linear-gradient(to bottom, #972437, #e90719);
+            color: #fff;
+            text-align: center;
+            display: block;
+            font-size: 32px;
+            text-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+            -webkit-box-shadow: inset 0 1px #972437, 0 2px 3px rgba(0, 0, 0, 0.2);
+            box-shadow: inset 0 1px #e90719, 0 2px 3px rgba(0, 0, 0, 0.2);
+            border: 1px solid #e90719;
+        }
+        
+        .add:hover span,
+        .back:hover span {
+            background: -webkit-gradient(linear, left top, left bottom, from(#972437), to(#972437));
+            background: -webkit-linear-gradient(top, #972437, #972437);
+            background: linear-gradient(to bottom, #e90719, #e90719);
+            -webkit-box-shadow: inset 0 1px #e90719, 0 2px 3px rgba(0, 0, 0, 0.2);
+            box-shadow: inset 0 1px #e90719, 0 2px 3px rgba(0, 0, 0, 0.2)
+        }
+        
+        .helper {
+            display: flex;
+            flex-direction: row;
+            gap: 40px;
+            justify-content: center;
+        }
+        
+        .input-helper {
+            height: 40px;
+            border: #972437 2px solid;
+            border-radius: 30px;
+            width: 500px;
+            margin-top: 15px;
+            font-size: 25px;
+        }
+        
+        .food {
+            height: 40px;
+            border: none;
+            width: 470px;
+            font-size: 25px;
+            background: none;
+            margin-left: 30px;
+            color: #972437;
+        }
+        
+        input:focus {
+            outline: none;
+        }
+        
+        h2 {
+            margin-top: 15px;
+            font-size: 35px;
+            color: #972437;
+        }
+        
+        ul {
+            font-size: 30px;
+            margin-left: 200px;
+            display: block;
+            list-style-type: disc;
+            margin-top: 1em;
+            margin-bottom: 1 em;
+            margin-left: 0;
+            margin-right: 0;
+            padding-left: 40px;
+        }
+        
+        li {
+            color: #972437;
+        }
+    </style>
+    <title>RandomFood</title>
+</head>
+
+<body>
+    <div class="main">
+        <div class="helper">
+            <h2></h2>
+            <div class="input-helper">
+                <input type="text" class="food">
+            </div>
+            <div>
+                <span class="add"><span>Нэмэх</span></span>
+                <span class="back"><span>Буцах</span></span>
+            </div>
+        </div>
+        <ul class="list">
+
+
+        </ul>
+    </div>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-firestore.js"></script>
+    <script>
+        firebase.initializeApp({
+            apiKey: "AIzaSyBvKC372hEtDGqumSJcgxYbUVzyfEqrCgY",
+            authDomain: "randomfood-afce0.firebaseapp.com",
+            projectId: "randomfood-afce0",
+            storageBucket: "randomfood-afce0.appspot.com",
+            messagingSenderId: "857658864489",
+            appId: "1:857658864489:web:cd0d5e81061405ec9cc3f8"
+        });
+        const db = firebase.firestore();
+    </script>
+    <script src="./user.js"></script>
+</body>
+
+</html>

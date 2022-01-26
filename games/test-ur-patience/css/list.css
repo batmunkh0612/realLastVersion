@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Play&display=swap');
+html,
+body {
+    margin: 0;
+}
+
+main {
+    height: 100vh;
+    width: 100vw;
+}
+
+.container1 {
+    height: 20%;
+    width: 100%;
+}
+
+.container2 {
+    height: 80%;
+    width: 100%;
+}
+
+.listContainer {
+    width: 80%;
+    height: 100%;
+    background: #3AB795B2;
+    border-radius: 10px;
+    margin-bottom: 100px;
+    padding-left: 10px;
+}
+
+p {
+    color: #FFFFFF;
+    font-size: 50px;
+    letter-spacing: 15px;
+    font-family: 'Play', sans-serif;
+}
+
+.lists {
+    height: 80%;
+    width: 50%;
+    overflow: scroll;
+}
+
+.createdAtContainer {
+    height: 100%;
+    width: 50%;
+}
+
+.bests {
+    font-size: 24px;
+    margin-bottom: 20px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.date {
+    color: #8E8E8E;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.hidden {
+    display: none;
+}
+
+.list,
+span {
+    color: #FFFFFF;
+    font-size: 30px;
+    letter-spacing: 15px;
+    font-family: 'Play', sans-serif;
+}
+
+.back {
+    position: fixed;
+    top: 2.5%;
+    left: 2.5%;
+    background: #3AB795B2;
+    color: #FFFFFF;
+    border: none;
+    border-radius: 10px;
+    height: 40px;
+    width: 80px;
+    cursor: pointer;
+}
+
+#icon {
+    margin-top: 30px;
+    margin-left: 20px;
+    width: 60px;
+    position: absolute;
+    align-self: flex-start;
+    transform: rotate(180deg);
+    z-index: 1;
+}
